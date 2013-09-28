@@ -1,0 +1,54 @@
+package com.first.display;
+
+import java.awt.BorderLayout;
+import java.awt.Canvas;
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+
+public class Game extends Canvas implements Runnable {
+	
+	public JFrame frame;
+	
+	public static final int WIDTH = 600,HEIGHT = WIDTH *9 /16;
+	public static final Dimension SIZE = new Dimension(WIDTH,HEIGHT);
+	
+	public Game(){
+		setPreferredSize(SIZE);
+		setMinimumSize(SIZE);
+		setMaximumSize(SIZE);
+		
+		frame = new JFrame();
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setResizable(true);
+		
+		frame.setLayout(new BorderLayout());
+		frame.add(this,BorderLayout.CENTER);
+		frame.pack();
+		
+		frame.setLocationRelativeTo(null);
+		frame.setVisible(true);
+		
+		
+	}
+
+	
+	public void run() {
+		
+	}
+	
+	public static void main(String[] a){
+		new Game().start();
+	}
+
+
+	public void start() {
+		
+	}
+	
+	public void stop(){
+		
+	}
+
+}
