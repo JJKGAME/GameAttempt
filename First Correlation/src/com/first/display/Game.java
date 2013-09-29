@@ -66,9 +66,7 @@ public class Game extends Canvas implements Runnable {
 	}
 
 
-	public static void main(String[] a){
-		new Game().start();
-	}
+	
 
 
 	public void start() {
@@ -78,6 +76,10 @@ public class Game extends Canvas implements Runnable {
 	
 	public void stop(){
 		running = false;
+	}
+	
+	public static void main(String[] a){
+		new Game().start();
 	}
 
 }
