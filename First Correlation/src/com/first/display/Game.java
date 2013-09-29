@@ -14,7 +14,7 @@ public class Game extends Canvas implements Runnable {
 	
 	public JFrame frame;
 	
-	public static final int WIDTH = 1600,HEIGHT = WIDTH *9 /16;
+	public static final int WIDTH = 1400,HEIGHT = WIDTH *9 /16;
 	public static final Dimension SIZE = new Dimension(WIDTH,HEIGHT);
 	
 	public boolean running;
@@ -60,7 +60,7 @@ public class Game extends Canvas implements Runnable {
 		g.setColor(Color.GREEN);
 		Font f = new Font("sansserif", Font.BOLD, 32);
 		g.setFont(f);
-		g.drawString("Hi Joel", getWidth()/2,getHeight()/2);
+		g.drawString("Hi Josh", getWidth()/2,getHeight()/2);
 		g.dispose();
 		bs.show();
 	}
