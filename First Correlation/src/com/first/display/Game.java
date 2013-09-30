@@ -60,7 +60,7 @@ public class Game extends Canvas implements Runnable {
 		g.setColor(Color.RED);
 		Font f = new Font("sansserif", Font.BOLD, 32);
 		g.setFont(f);
-		g.drawString("blah", getWidth()/2,getHeight()/2);
+		g.drawString("654654", getWidth()/2,getHeight()/2);
 		g.dispose();
 		bs.show();
 	}
